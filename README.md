@@ -39,8 +39,13 @@
                 
                 <div class="col-6 col-md-6 col-lg-6">
                     
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
                     <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                       
+                       input type=hidden name='captcha_settings' value='{"keyname":"New","fallback":"true","orgId":"00D1s0000008qha","ts":""}'>
                         <input type="hidden" name="oid" value="00D1s0000008qha"/>
                         <input type="hidden" name="retURL" value="https://sivakarthik98.github.io/ACME/"/>
                         
@@ -95,7 +100,7 @@
                             <option value="Mumbai">Mumbai</option>
                             </select><br/>
                         </div>
-                       <div class="g-recaptcha" data-sitekey="6Lewa7EaAAAAAMxnx4yRBxd37bRzzXc0LKgVD2JZ"></div><br>
+                       <div class="g-recaptcha" data-sitekey="6LcNjbEaAAAAADc4wMzsofReyQK4pXOKNLJW7AMI"></div><br>
                         <button type="submit"  class="btn btn-primary">Submit</button>
                         
                     </form> 
