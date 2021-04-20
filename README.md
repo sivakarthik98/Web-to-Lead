@@ -45,7 +45,7 @@
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
 </script>
                     <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                       input type=hidden name='captcha_settings' value='{"keyname":"New","fallback":"true","orgId":"00D1s0000008qha","ts":""}'>
+                       <input type=hidden name='captcha_settings' value='{"keyname":"New","fallback":"true","orgId":"00D1s0000008qha","ts":""}'>
                         <input type="hidden" name="oid" value="00D1s0000008qha"/>
                         <input type="hidden" name="retURL" value="https://sivakarthik98.github.io/ACME/"/>
                         
